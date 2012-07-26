@@ -8,11 +8,12 @@ require.config({
 	paths: {
 		// libraries
 		'use': "libs/requirejs/addons/use", // documentup.com/tbranyen/use.js
-		'jquery': "libs/jquery-1.7.2", // jquery.com
+		'jquery': "libs/jquery-1.7.2", // jquery.com,
+		'jquery-mobile': "libs/jquery-mobile/jquery.mobile-1.1.1.js", // jquerymobile.com
 		'bootstrap': "libs/bootstrap/bootstrap", // twitter.github.com/bootstrap
-		'debug': "libs/ba.debug", // benalman.com/code/projects/javascript-debug
+		'debug': "libs/ba.debug/ba.debug", // benalman.com/code/projects/javascript-debug
 		'domready': "libs/requirejs/addons/domReady", // requirejs.org/docs/download.html#domReady
-		'knockoutjs': "libs/knockout-2.1.0.debug", // knockoutjs.com
+		'knockoutjs': "libs/knockoutjs/knockout-2.1.0.debug", // knockoutjs.com
 		// /libraries
 
 		// application core
