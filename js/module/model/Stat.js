@@ -10,7 +10,28 @@ define(["jquery"], function() {
 	 * Initializes this view model.
 	 */
 	var initialize = function() {
+		debug.info(toString(), "Initializing");
+	};
 
+	/**
+	 * The latitude and longitude coordinate pair of the sighting.
+	 */
+	var where = {
+		lat: null,
+		lon: null
+	};
+
+	/**
+	 * The timestamp of the sighting.
+	 */
+	var when = null;
+
+	/**
+	 * The number of children sighted.
+	 */
+	var count = {
+		boy: null,
+		girl: null
 	};
 
 	/**
@@ -19,14 +40,22 @@ define(["jquery"], function() {
 	 */
 	var toString = function() {
 		return {
-			classname: "Stat",
+			classname: "model.Stat",
 			members: {
 				initalize: initialize,
 				toString: toString
-
 			}
 		}
 	};
+
+	var serialize = function() {
+		debug.log(toString(), "Serializing...");
+		return {
+			where: where,
+			when: when,
+			count: count
+		};
+	}
 
 	// Call <code>initialize</code> when this module is loaded by requirejs.
 	initialize();
