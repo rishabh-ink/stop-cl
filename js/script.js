@@ -22,13 +22,16 @@ require.config({
 
 		// models
 		'com.rishabhsrao.apps.stopcl.model.Service': "model/Service",
-		'com.rishabhsrao.apps.stopcl.model.Stat': "model/Stat"
+		'com.rishabhsrao.apps.stopcl.model.Stat': "model/Stat",
 		// /models
 
-		// viewmodel
+		// viewmodels
 		'com.rishabhsrao.apps.stopcl.viewmodel.Home': "viewmodel/Home",
-		''
-		// /viewmodel
+		'com.rishabhsrao.apps.stopcl.viewmodel.Report': "viewmodel/Report",
+		'com.rishabhsrao.apps.stopcl.viewmodel.Services': "viewmodel/Services",
+		'com.rishabhsrao.apps.stopcl.viewmodel.Stats': "viewmodel/Stats",
+		'com.rishabhsrao.apps.stopcl.viewmodel.Thanks': "viewmodel/Thanks",
+		// /viewmodels
 
 		// utilities
 		'com.rishabhsrao.apps.stopcl.util.ajax.Communication': "modules/util/ajax/Communication",
@@ -41,7 +44,6 @@ require.config({
 require(["com.rishabhsrao.apps.stopcl.lib.domready", "com.rishabhsrao.apps.stopcl.Core"], function(domReady, core) {
 	domReady(function() {
 		debug.info("Starting application... Please stand by...");
-		core.initialize();
 	});
 });
 
